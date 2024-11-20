@@ -1,0 +1,88 @@
+/*carusel turno mañana*/
+
+section{
+    display: flex;
+    width: 100%;
+    height: 430px;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 700px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*recuadro*/
+
+.contenedor {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #a3b18a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.oferta {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+
+/*requisitos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.requirements-container {
+    width: 300px;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.1);
+    float: right;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+img.ico{
+    width: 40px;
+
+}
+
+footer{
+    display:flex;
+    
+}

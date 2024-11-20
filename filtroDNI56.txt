@@ -1,0 +1,117 @@
+
+<?php include 'layaout/head.php'; ?>
+<?php include 'layaout/header.php'; ?>
+<?php include 'layaout/footer.php'; ?>
+
+<?php
+// Conexión a la base de datos
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "registro";
+
+// Crear la conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+// Mostrar todos los registros si no se ha enviado el formulario de filtro
+if (!isset($_POST['filter'])) {
+    // Consulta para mostrar todos los registros
+    $sql = "SELECT * FROM inscripciones";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        echo "<h2>Todos los Registros</h2>";
+        echo "<table class='table table-bordered'>";
+        echo "<thead><tr><th>Nombre</th><th>Apellido</th><th>Teléfono o Celular</th><th>Email</th><th>DNI</th><th>Edad</th><th>Comentario</th></tr></thead>";
+        echo "<tbody>";
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . htmlspecialchars($row['nombre']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['apellido']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['nContacto']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['gmail']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['dni']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['edad']) . "</td>";
+            echo "<td>" . htmlspecialchars($row['comentario']) . "</td>";
+            echo "</tr>";
+        }
+        echo "</tbody>";
+        echo "</table>";
+    } else {
+        echo "<h3>No se encontraron registros en la base de datos.</h3>";
+    }
+}
+
+// Verificar si se ha enviado el formulario de filtro
+if (isset($_POST['filter'])) {
+    $filterDNI = !empty($_POST['filterDNI']) ? trim($_POST['filterDNI']) : null;
+    $filterGmail = !empty($_POST['filterGmail']) ? trim($_POST['filterGmail']) : null;
+
+    // Construir la consulta dinámica
+    $sql = "SELECT * FROM inscripciones WHERE 1=1"; // Base de la consulta
+    $params = [];
+    $types = '';
+
+    // Agregar el filtro de DNI si está presente
+    if ($filterDNI !== null) {
+        $sql .= " AND dni = ?";
+        $params[] = $filterDNI;
+        $types .= 's'; // 's' significa que esperamos una cadena
+    }
+
+    // Agregar el filtro de Gmail si está presente
+    if ($filterGmail !== null) {
+        $sql .= " AND gmail = ?";
+        $params[] = $filterGmail;
+        $types .= 's'; // 's' también para una cadena
+    }
+
+    // Preparar y ejecutar la consulta solo si hay filtros
+    if ($stmt = $conn->prepare($sql)) {
+        // Si hay parámetros, asociarlos a la consulta
+        if ($types) {
+            $stmt->bind_param($types, ...$params);
+        }
+
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        // Verificar si se encontró alguna fila después de filtrar
+        if ($result->num_rows > 0) {
+            echo "<h2>Resultados del Filtro</h2>";
+            echo "<table class='table table-bordered'>";
+            echo "<thead><tr><th>Nombre</th><th>Apellido</th><th>Teléfono o Celular</th><th>Email</th><th>DNI</th><th>Edad</th><th>Comentario</th></tr></thead>";
+            echo "<tbody>";
+            while ($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>" . htmlspecialchars($row['nombre']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['apellido']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['nContacto']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['gmail']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['dni']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['edad']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['comentario']) . "</td>";
+                echo "</tr>";
+            }
+            echo "</tbody>";
+            echo "</table>";
+        } else {
+            echo "<h3>No se encontraron registros que coincidan con los criterios de filtro.</h3>";
+        }
+
+        // Cerrar la consulta
+        $stmt->close();
+    } else {
+        echo "<h3>Error al preparar la consulta.</h3>";
+    }
+}
+
+
+// Cerrar la conexión
+$conn->close();
+?>

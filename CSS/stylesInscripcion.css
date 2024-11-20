@@ -1,0 +1,24 @@
+
+  
+  .cartel {
+    background-color: #3498db;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 20px;
+  }
+  
+  .titilar {
+    animation: titilar 1s infinite;
+  }
+  
+  @keyframes titilar {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  

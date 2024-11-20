@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>CENTRO DE FORMACION PROFECIONAL N°2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+
+    <!--Links a JSs-->
+    <script src="JS/scripBtnScrool.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Links a CSSs-->
+    <link rel="stylesheet" href="CSS/stylePrincipal.css">
+    <link rel="stylesheet" href="CSS/styleNoticias.css">
+    <link rel="stylesheet" href="CSS/styleFlecha.css">
+    <link rel="stylesheet" href="CSS/stylesImagenes.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img class="CFPlogo" src="IMG/logoCFP/logocfp.png" alt="CFPlogo">
+            <div class="container">
+                <a class="navbar-brand centrodef" href="index.php"> CENTRO DE FORMACION PROFESIONAL N°2 <br> Santa
+                    Maria
+                    Catamarca</a>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item centrodef">
+                            <a class="nav-link" style="font-size: px;" href="ofertaAcademica.html">Programas
+                                Académicos</a>
+                        </li>
+                        <li class="nav-item centrodef">
+                            <a class="nav-link" href="contactos.php">Contacto</a>
+                        </li>
+                        <!-- boton de cambiar el modo Dark o Ligth -->
+                        <button onclick="cambiarModo()"> <svg id="toggleDark" xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg> </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <img src="Proteccion/Img(1).png" alt="">
+        <img src="Proteccion/Img(2).png" alt="">
+        <img src="Proteccion/Img(3).png" alt="">
+        <img src="Proteccion/Img(5).png" alt="">
+    </section>
+    <br><br><br><br><br>
+
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+            fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+            <path
+                d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0" />
+        </svg>
+    </button>
+
+    <footer>
+        <p><em>Derechos de autor © 2023 Centro de Formacion N°2 Santa Maria - Catamarca</em></p>
+    </footer>
+
+</body>
+
+</html>

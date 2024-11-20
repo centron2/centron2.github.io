@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(to bottom, #A3B18A, #7E9971); 
+}
+
+nav {
+    background: linear-gradient(to bottom, #A3B18A, #7E9971);
+    color: white;
+}
+
+/*esto es el encabezado de la pagina*/
+header {
+    background: linear-gradient(to bottom, #6B8D64, #588157);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*esto es la parte del pie de pagina*/
+footer {
+    background: linear-gradient(to bottom, #3A5A40, #344E41);
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    
+}
+
+/*este hace el efecto de scrool suabe*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*esto es el efecto de sombra a los liks*/
+.centrodef {
+    font-size: 23px;
+    margin-left: auto;
+    font-family: "poppins";
+    color: black;
+}
+
+/*esto tambien*/
+.centrodef:hover {
+    color: #fff;
+    font-size: 23px;
+    margin-left: auto;
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #1e6091,
+        0 0 40px #52b69a,
+        0 0 80px #b5e48c;
+}
+
+/*esto es el logo que aparece en la esquina*/
+.CFPlogo {
+    width: 15%;
+}
+

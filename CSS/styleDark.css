@@ -1,0 +1,547 @@
+/* Style Principal Dark*/
+
+body {
+    background: linear-gradient(to bottom, #52796F, #354F52);
+}
+
+nav {
+    background: linear-gradient(to bottom, #52796F, #4B6F68);
+    color: white;
+}
+
+/*esto es el encabezado de la pagina*/
+header {
+    background: linear-gradient(to bottom, #6B8D64, #588157);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*esto es la parte del pie de pagina*/
+footer {
+    background: linear-gradient(to bottom, #3A5A40, #344E41);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+   
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+/*este hace el efecto de scrool suabe*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*esto es el efecto de sombra a los liks*/
+.centrodef {
+    font-size: 23px;
+    margin-left: auto;
+    font-family: "poppins";
+    color: white;
+}
+
+/*esto tambien*/
+.centrodef:hover {
+    color: #fff;
+    margin-left: auto;
+    font-size: 23px;
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #1e6091,
+        0 0 40px #52b69a,
+        0 0 80px #b5e48c;
+}
+
+/*esto es el logo que aparece en la esquina*/
+.CFPlogo {
+    width: 15%;
+}
+
+
+
+/*Style Flecha Dark*/
+
+/* estilo del boton de scrool o la flecha para volver hacia arriba*/
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #2f3e46;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #588157;
+}
+
+/*este hace el efecto de scrool suabe*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/*Style Noticias Dark */
+
+/*titulo de noticias de la semana*/
+.diario-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.noticias-containerprincipal {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 20px;
+    margin: auto;
+}
+
+.noticias-containersecundario {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 20px;
+}
+
+article {
+    background: linear-gradient(to bottom, #6B917E, #5F8577);
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+article h3 {
+    color: white;
+    margin: 10px;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+article p {
+    background: linear-gradient(to bottom, #52796F, #354F52);
+    color: white;
+    margin: 0 10px 10px;
+    border-radius: 10px 10px;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+article a {
+    background: linear-gradient(to bottom, #3A5A40, #344E41);
+    display: block;
+    background-color: #bc6c25;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+
+
+/* Style Oferta Dark*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row>div {
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+p,
+h2 {
+    text-align: center;
+}
+
+.tamaño {
+    width: 100px;
+    height: 500px;
+}
+
+/* Ajuste el ancho de las columnas según sus necesidades */
+.container {
+    max-width: 1200px;
+    color: white;
+    /* Ajusta según tus necesidades */
+}
+
+.col {
+    transition: background-image 0.3s ease;
+    padding: 20px;
+    /* Añade un espacio interno para mejorar la apariencia */
+}
+
+.col:hover {
+    color: blue;
+}
+
+/* Ajusta el espacio entre las columnas */
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Estilo de letra atractivo */
+.atractivo {
+    font-family: 'Pacifico', cursive;
+    /* Puedes cambiar 'Pacifico' por otra fuente de Google Fonts */
+    font-size: 30px;
+    color: #fff;
+    /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra del texto */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
+    line-height: 1.5;
+    /* Altura de línea */
+
+    color: #fff;
+    /* Color del texto */
+    -webkit-text-stroke: 2px black;
+    /* Ancho y color del contorno */
+    padding: 10px;
+    /* Opcional: Agregar relleno para separar el texto del borde */
+
+    text-shadow: 5px 5px 10px #000;
+}
+
+.columna {
+    background-size: cover;
+    /* Otra opción: "contain" para que la imagen se ajuste completamente dentro del contenedor */
+    background-position: center;
+    /* Otra opción: puedes ajustar la posición de la imagen según tus necesidades */
+    width: 500px;
+    height: auto;
+    transition: background-image 0.3s ease;
+    background-color: #e29578;
+    color: #fefae0;
+    font-size: 30px;
+}
+
+
+.columna:hover {
+    background-image: url(/IMG/oferta/albañil.jpg);
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    color: #fefae0;
+    font-size: 30px;
+}
+
+.container-fluid {
+    font-family: 'Pacifico', cursive;
+    /* Puedes cambiar 'Pacifico' por otra fuente de Google Fonts */
+    font-size: 40px;
+    /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra del texto */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
+    line-height: 1.5;
+    /* Altura de línea */
+
+    color: #fff;
+    /* Color del texto */
+    -webkit-text-stroke: 2px black;
+    /* Ancho y color del contorno */
+    padding: 10px;
+    /* Opcional: Agregar relleno para separar el texto del borde */
+
+    text-shadow: 5px 5px 10px #000;
+    text-align: center;
+}
+
+.columna1 {
+    background-size: cover;
+    /* Otra opción: "contain" para que la imagen se ajuste completamente dentro del contenedor */
+    background-position: center;
+    /* Otra opción: puedes ajustar la posición de la imagen según tus necesidades */
+    width: 500px;
+    height: auto;
+    transition: background-image 0.3s ease;
+    background-color: #83c5be;
+    color: #333;
+}
+
+.columna1:hover {
+    background-image: url(/IMG/oferta/electricidad_industrial.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: #fefae0;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna2 {
+    transition: background-color 0.3s ease;
+    background-color: #5e548e;
+}
+
+.columna2:hover {
+    background-image: url(/IMG/oferta/electricidad_domiciliaria.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: blue;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna3 {
+    transition: background-color 0.3s ease;
+    background-color: #be95c4;
+}
+
+.columna3:hover {
+    background-image: url(/IMG/oferta/modista.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: blue;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna4 {
+    transition: background-color 0.3s ease;
+    background-color: #99582a;
+}
+
+.columna4:hover {
+    background-image: url(/IMG/oferta/curtido2.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: blue;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna5 {
+    transition: background-color 0.3s ease;
+    background-color: #8e9aaf;
+}
+
+.columna5:hover {
+    background-image: url(/IMG/oferta/mecanica.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: blue;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna6 {
+    transition: background-color 0.3s ease;
+    background-color: #c8b6ff;
+}
+
+.columna6:hover {
+    background-image: url(/IMG/oferta/informatica.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna7 {
+    transition: background-color 0.3s ease;
+    background-color: #3c6e71;
+}
+
+.columna7:hover {
+    background-image: url(/IMG/oferta/);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna8 {
+    transition: background-color 0.3s ease;
+    background-color: #e7ecef;
+}
+
+.columna8:hover {
+    background-image: url(/IMG/oferta/plomeria.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna9 {
+    transition: background-color 0.3s ease;
+    background-color: #90a955;
+}
+
+.columna9:hover {
+    background-image: url(/IMG/oferta/soldadura.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna10 {
+    transition: background-color 0.3s ease;
+    background-color: #b5179e;
+}
+
+.columna10:hover {
+    background-image: url(/IMG/oferta/soldadura_industrial.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna11 {
+    transition: background-color 0.3s ease;
+    background-color: #ff9f1c;
+}
+
+.columna11:hover {
+    background-image: url(/IMG/oferta/peluqueria.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna12 {
+    transition: background-color 0.3s ease;
+    background-color: #ffcfd2;
+}
+
+.columna12:hover {
+    background-image: url(/IMG/oferta/gastronomia.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna13 {
+    transition: background-color 0.3s ease;
+    background-color: #27a300;
+}
+
+.columna13:hover {
+    background-image: url(/IMG/oferta/operador_horticola.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna14 {
+    transition: background-color 0.3s ease;
+    background-color: #778da9;
+}
+
+.columna14:hover {
+    background-image: url(/IMG/oferta/carpinteria.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.columna15 {
+    transition: background-color 0.3s ease;
+    background-color: #f2d492;
+}
+
+.columna15:hover {
+    background-image: url(/IMG/oferta/mecatronica.jpg);
+    opacity: 100%;
+    background-size: 100% 100%;
+    /* Ajusta según tus necesidades */
+    /* Cambia el color de fondo al pasar el mouse */
+    color: white;
+    /* Cambia el color del texto al pasar el mouse */
+}

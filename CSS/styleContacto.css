@@ -1,0 +1,324 @@
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Agregué una sombra al formulario */
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    /* Aumenté el espacio interno del fieldset */
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.5em;
+    /* Aumenté el tamaño del legend *
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Añadí margen inferior al legend */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: calc(100% - 16px);
+    /* Ajusté el ancho y agregué un pequeño margen */
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    /* Agregué un borde a los input y textarea */
+    border-radius: 4px;
+}
+
+.btnEnviar {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    /* Ajusté el padding del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Agregué una sombra al botón */
+}
+
+.btnEnviar:hover {
+    background-color: #45a049;
+}
+
+table {
+    padding: 20px;
+    border: 3px solid rgb(128, 128, 128);
+    margin: 100px;
+}
+
+caption {
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h5 a {
+    font-size: 20px;
+    color: #caf0f8;
+}
+
+p a:hover {
+    font-size: 30px;
+    color: #007bb5;
+}
+
+/*estilos de los comentarios*/
+
+.comentarios {
+    padding: 3em 5em;
+}
+
+.comentarios .comentarios_contenedor {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+.comentarios .comentarios_result {
+    margin-bottom: 3em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 50%;
+    height: 60%;
+}
+
+
+/* Estilo del MAPA */
+.map{
+    width: 100%;
+}
+.map-container {
+    display: flex;
+    align-items: center;
+}
+
+.map-container h5 {
+    margin-right: 20px;
+    /* Ajusta el margen entre la dirección y el mapa según sea necesario */
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+.pepeimg{
+    margin-left:500px;
+    position: absolute;
+    border: solid 1px ;
+    border-radius: 10px 10px;
+}
+
+.h2contacto, .h3contacto, .h5contacto{
+    margin-left: 50px;
+    text-align: left;
+    color: white;
+}
+
+/*ICONOS DE REDES SOCIALES
+ 
+     | |          | | 
+     | |          | | 
+     | |          | |
+   \     /      \     /
+    \   /        \   /
+*/
+
+/* Estilos para la sección de redes sociales */
+.redes-sociales {
+    position: relative;
+    /* Establece la posición relativa para los elementos hijos posicionados de forma absoluta dentro */
+    display: flex;
+    /* Utiliza un modelo de caja flexible para la lista de iconos */
+    transform-style: preserve-3d;
+    /* Preserva el estilo de transformación 3D para que los elementos hijos mantengan sus propias transformaciones */
+    transform: rotate(1deg) skew(1deg);
+    /* Aplica una rotación y sesgo a la lista de iconos para un efecto visual */
+}
+
+/* Estilos para cada ícono en la lista */
+.ul-iconos .li-icon {
+    position: relative;
+    /* Establece la posición relativa para los elementos hijos posicionados de forma absoluta dentro */
+    list-style: none;
+    /* Elimina los estilos de lista predeterminados */
+    width: 60px;
+    /* Establece el ancho fijo para cada ícono */
+    height: 60px;
+    /* Establece la altura fija para cada ícono */
+    margin: 10px;
+    /* Establece el margen entre cada ícono */
+    transition: 0.1s;
+    /* Aplica una transición suave de 0.1 segundos a cambios en propiedades animadas */
+}
+
+/* Estilos para la parte inferior del ícono */
+.ul-iconos .li-icon::before {
+    content: "";
+    /* Crea un elemento de contenido antes del contenido real del ícono */
+    position: absolute;
+    /* Establece la posición absoluta para posicionar el elemento de contenido de manera precisa */
+    width: 100%;
+    /* Establece el ancho del elemento de contenido al 100% del ícono */
+    height: 10px;
+    /* Establece la altura del elemento de contenido en 10px */
+    bottom: -10px;
+    /* Desplaza el elemento de contenido hacia abajo para superponerlo en la parte inferior del ícono */
+    left: 0;
+    /* Coloca el elemento de contenido en la posición izquierda del ícono */
+    background: #2a2a2a;
+    /* Establece el color de fondo del elemento de contenido */
+    transform-origin: top;
+    /* Establece el origen de la transformación en la parte superior del elemento */
+    transform: skew(-41deg);
+    /* Aplica una transformación de sesgo al elemento de contenido */
+}
+
+/* Estilos para el lado izquierdo del ícono */
+.ul-iconos .li-icon::after {
+    content: "";
+    /* Crea un elemento de contenido después del contenido real del ícono */
+    position: absolute;
+    /* Establece la posición absoluta para posicionar el elemento de contenido de manera precisa */
+    width: 10px;
+    /* Establece el ancho del elemento de contenido en 10px */
+    height: 100%;
+    /* Establece la altura del elemento de contenido al 100% del ícono */
+    left: -10px;
+    /* Desplaza el elemento de contenido hacia la izquierda para superponerlo en el lado izquierdo del ícono */
+    background: #2a2a2a;
+    /* Establece el color de fondo del elemento de contenido */
+    transform-origin: right;
+    /* Establece el origen de la transformación en el lado derecho del elemento */
+    transform: skewY(-49deg);
+    /* Aplica una transformación de sesgo vertical al elemento de contenido */
+
+}
+
+/* Estilos para cada span dentro del ícono */
+.ul-iconos .li-icon span {
+    position: absolute;
+    /* Establece la posición absoluta para posicionar el contenido del ícono de manera precisa */
+    width: 100%;
+    /* Establece el ancho del span al 100% del ícono */
+    height: 100%;
+    /* Establece la altura del span al 100% del ícono */
+    background-color: #333333;
+    /* Establece el color de fondo del span */
+    display: flex;
+    /* Utiliza un modelo de caja flexible para el contenido del span */
+    align-items: center;
+    /* Centra verticalmente el contenido del span */
+    justify-content: center;
+    /* Centra horizontalmente el contenido del span */
+    color: rgba(255, 255, 255, 0.5);
+    /* Establece el color del texto con un poco de transparencia */
+    font-size: 1.5em;
+    /* Establece el tamaño de fuente del texto en 1.5 em */
+    transition: 0.5s;
+    /* Aplica una transición suave de 0.5 segundos a cambios en propiedades animadas */
+}
+
+/* Estilos al hacer hover sobre el ícono */
+.ul-iconos .li-icon:hover span {
+    z-index: 1000;
+    /* Coloca el ícono en la parte superior del apilamiento al hacer hover */
+    box-shadow: -1px 1px 1px rgba(255, 255, 255, 0.05);
+    /* Agrega una sombra al ícono al hacer hover */
+    color: #fff;
+    /* Cambia el color del texto al hacer hover */
+}
+
+/* Estilos específicos para cada span al hacer hover */
+.ul-iconos .li-icon:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    /* Mueve el quinto span en diagonal al hacer hover */
+    opacity: 1;
+    /* Establece la opacidad completa al hacer hover */
+}
+
+.ul-iconos .li-icon:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    /* Mueve el cuarto span en diagonal al hacer hover */
+    opacity: 0.8;
+    /* Establece una opacidad del 80% al hacer hover */
+}
+
+.ul-iconos .li-icon:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    /* Mueve el tercer span en diagonal al hacer hover */
+    opacity: 0.6;
+    /* Establece una opacidad del 60% al hacer hover */
+}
+
+.ul-iconos .li-icon:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    /* Mueve el segundo span en diagonal al hacer hover */
+    opacity: 0.4;
+    /* Establece una opacidad del 40% al hacer hover */
+}
+
+.ul-iconos .li-icon:hover span:nth-child(1) {
+    transform: translate(0px, 0px);
+    /* Restaura la posición original del primer span al hacer hover */
+    opacity: 0.2;
+    /* Establece una opacidad del 20% al hacer hover */
+}
+
+/* Estilos al hacer hover en el primer ícono */
+.ul-iconos .li-icon:nth-child(1):hover span {
+    background: #3b5998;
+    /* Cambia el fondo del primer ícono al hacer hover */
+}
+
+/* Estilos al hacer hover en el segundo ícono */
+.ul-iconos:nth-child(2) .li-icon:hover span {
+    background: #55acee;
+    /* Cambia el fondo del segundo ícono al hacer hover */
+}
+
+/* Estilos al hacer hover en el tercer ícono */
+.ul-iconos:nth-child(3) .li-icon:hover span {
+    background: linear-gradient(125deg, #515bd4, #8134af, #dd2a7b, #f58529);
+    /* Cambia el fondo del tercer ícono al hacer hover */
+}
+
+/* Estilos al hacer hover en el cuarto ícono */
+.ul-iconos:nth-child(4) .li-icon:hover span {
+    background: #4dc247;
+    /* Cambia el fondo del cuarto ícono al hacer hover */
+}
+
+/* Estilos al hacer hover en el quinto ícono */
+.ul-iconos:nth-child(5) .li-icon:hover span {
+    background: #007bb5;
+    /* Cambia el fondo del quinto ícono al hacer hover */
+}
+
+
+
+
+

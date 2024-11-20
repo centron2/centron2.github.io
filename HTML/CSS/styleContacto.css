@@ -1,0 +1,157 @@
+/* Estilos para el formulario */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para los fieldsets */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px; /* Aumenta el espacio interno */
+    margin-bottom: 20px;
+}
+
+/* Estilos para los legend */
+legend {
+    font-size: 1.5em; /* Aumenta el tamaño del legend */
+    font-weight: bold;
+    margin-bottom: 10px; /* Añade margen inferior */
+}
+
+/* Estilos para los labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para los inputs y textarea */
+input,
+textarea {
+    width: calc(100% - 16px); /* Ajuste del ancho */
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Borde más suave */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px; /* Ajusta el padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+button:hover {
+    background-color: #45a049; /* Cambia el color del botón al pasar el mouse */
+}
+
+/* Estilos para las tablas */
+table {
+    padding: 20px;
+    border: 3px solid #808080; /* Color gris */
+    margin: 100px;
+}
+
+/* Estilos para las captions de las tablas */
+caption {
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+/* Estilos para los iconos de redes sociales */
+.redes-sociales {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centrar iconos */
+    transform-style: preserve-3d;
+    transform: rotate(1deg) skew(1deg); /* Efecto visual */
+}
+
+/* Estilos para cada ícono */
+.ul-iconos .li-icon {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    transition: 0.1s; /* Transición suave */
+}
+
+/* Estilos para el efecto 3D de los íconos */
+.ul-iconos .li-icon::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: -10px;
+    left: 0;
+    background: #2a2a2a;
+    transform-origin: top;
+    transform: skew(-41deg);
+}
+
+.ul-iconos .li-icon::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    left: -10px;
+    background: #2a2a2a;
+    transform-origin: right;
+    transform: skewY(-49deg);
+}
+
+/* Estilos para el contenido del span en los iconos */
+.ul-iconos .li-icon span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5em;
+    transition: 0.5s; /* Transición más suave */
+}
+
+/* Hover sobre los iconos */
+.ul-iconos .li-icon:hover span {
+    z-index: 1000;
+    box-shadow: -1px 1px 1px rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+/* Efectos específicos por ícono en hover */
+.ul-iconos .li-icon:nth-child(1):hover span {
+    background: #3b5998; /* Facebook */
+}
+
+.ul-iconos .li-icon:nth-child(2):hover span {
+    background: #55acee; /* Twitter */
+}
+
+.ul-iconos .li-icon:nth-child(3):hover span {
+    background: linear-gradient(125deg, #515bd4, #8134af, #dd2a7b, #f58529); /* Instagram */
+}
+
+.ul-iconos .li-icon:nth-child(4):hover span {
+    background: #4dc247; /* WhatsApp */
+}
+
+.ul-iconos .li-icon:nth-child(5):hover span {
+    background: #007bb5; /* LinkedIn */
+}
