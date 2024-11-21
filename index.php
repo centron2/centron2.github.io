@@ -1,5 +1,5 @@
 <?php
-    // Incluir la cabecera (si lo deseas modular)
+    // Incluir la cabecera y el encabezado si lo deseas modular
     include 'layaout/head.php';
     include 'layaout/header.php';
 ?>
@@ -12,11 +12,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenidos a nuestra escuela</title>
     <link rel="stylesheet" href="contacto2.css">
+
+    <style>
+        /* Estilos originales del código */
+
+        .carousel {
+            overflow: hidden;
+            width: 100%; /* El contenedor debe ocupar el 100% del ancho de la pantalla */
+        }
+
+        .marquee-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Asegura que las imágenes estén alineadas a la izquierda */
+            width: 100%; /* Asegura que el contenedor ocupe el 100% de la pantalla */
+        }
+
+        .marquee-content {
+            display: flex;
+            flex-wrap: nowrap; /* Esto asegura que las imágenes se alineen horizontalmente sin que se apilen */
+            animation: scroll 20s linear infinite;
+        }
+
+        .marquee img {
+            width: 250px;
+            height: 250px;
+            margin-right: 10px; /* Espacio entre las imágenes */
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Estilo para el botón de ir arriba */
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #343a40;
+            color: #08f7fe;
+            border: none;
+            border-radius: 50%;
+            display: none; /* Oculto por defecto */
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 0 10px #08f7fe, 0 0 20px #08f7fe, 0 0 30px #08f7fe;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        #scrollToTopBtn:hover {
+            box-shadow: 0 0 20px #08f7fe, 0 0 30px #08f7fe, 0 0 40px #08f7fe;
+        }
+
+        #scrollToTopBtn svg {
+            width: 30px;
+            height: 30px;
+            fill: currentColor;
+        }
+
+        /* Estilo del texto en movimiento */
+        .moving-text {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .neon-text p {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .neon-text a {
+            color: #08f7fe;
+            text-decoration: none;
+        }
+
+        .neon-text a:hover {
+            color: #0ff;
+        }
+
+        /* Cerrar botón */
+        #closeButton {
+            margin-left: 15px;
+            background: #555;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <!-- Contenido de la página -->
+    <!-- Contenido de tu página -->
     <div class="hero">
         <div class="container text-center">
             <h1>Bienvenidos a nuestra escuela</h1>
@@ -56,36 +157,33 @@
         </article>
     </section>
 
-    <style>
-        /* Estilo para el botón de ir arriba */
-        #scrollToTopBtn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background-color: #343a40;
-            color: #08f7fe;
-            border: none;
-            border-radius: 50%;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 0 10px #08f7fe, 0 0 20px #08f7fe, 0 0 30px #08f7fe;
-            transition: box-shadow 0.3s ease-in-out;
-        }
+    <section class="noticias-containersecundario">
+        <article>
+            <img src="/img2.0/silicon.jpg" alt="Silicon Valley">
+            <h3>Experiencia Silicon Valley</h3>
+            <p>Participantes de la Experiencia Silicon Valley 2024 propuestos por la Fundación del Tucumán, con integrantes de Paraguay, Bolivia y Argentina (Salta, Jujuy, Tucumán y Catamarca), Visitas a Google, HP, Plug and Play, Tesla, Stanford University, Amazon, Draper University, Linckein, SAP, Autodesk, Indie Bio, más otras aceleradoras de Startups, tecnológicas y biotecnológicas. Nodo Tecnológico - Catamarca Capital Municipalidad de Santa María #FPCatamarca #CFPN2</p>
+            <a href="https://www.facebook.com/share/p/1EiPfLNCHs/" target="_blank">Leer más</a>
+        </article>
 
-        #scrollToTopBtn:hover {
-            box-shadow: 0 0 20px #08f7fe, 0 0 30px #08f7fe, 0 0 40px #08f7fe;
-        }
+        <article>
+            <img src="/img2.0/diaEstu2.jpg" alt="Jornada día del estudiante">
+            <h3>Jornada Día del Estudiante</h3>
+            <p>Jornada por el Día del estudiante y elección de la Reina y princesas. Agradecemos al complejo policial por brindarnos sus instalaciones.</p>
+            <a href="https://www.facebook.com/share/p/19ChxLjDsX/" target="_blank">Leer más</a>
+        </article>
 
-        #scrollToTopBtn svg {
-            width: 30px;
-            height: 30px;
-            fill: currentColor;
-        }
-    </style>
+        <article>
+            <img src="/img2.0/energiaReno.jpg" alt="Energía Renovable">
+            <h3>Energía Renovable</h3>
+            <p>Jornada de capacitación para alumnos IES de la Tecnicatura Superior en Gestión de Energías Renovables, dictado por el Prof. Fernando Paz y alumnos de Electricidad Domiciliaria. Articulación IES/CFPN2.</p>
+            <a href="https://www.facebook.com/share/p/14k2aGB6bG/" target="_blank">Leer más</a>
+        </article>
+    </section>
+
+    <div class="moving-text neon-text" id="movingText">
+        <p><a href="inscripcion.html" target="_blank">Inscripciones 2025</a></p>
+        <button id="closeButton" onclick="closeMovingText()">Cerrar</button>
+    </div>
 
     <button id="scrollToTopBtn" onclick="scrollToTop()">
         <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
@@ -111,6 +209,10 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+        function closeMovingText() {
+            document.getElementById('movingText').style.display = 'none';
+        }
     </script>
 
 </body>
@@ -118,6 +220,6 @@
 </html>
 
 <?php
-    // Incluir el pie de página (si lo deseas modular)
+    // Incluir pie de página si lo deseas modular
     include 'layaout/footer.php';
 ?>
