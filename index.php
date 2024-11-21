@@ -1,5 +1,5 @@
 <?php
-    // Incluir la cabecera
+    // Incluir la cabecera (si lo deseas modular)
     include 'layaout/head.php';
     include 'layaout/header.php';
 ?>
@@ -12,42 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenidos a nuestra escuela</title>
     <link rel="stylesheet" href="contacto2.css">
-
-    <style>
-        /* Estilos del carrusel */
-        .carousel {
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .marquee-container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            width: 100%;
-        }
-
-        .marquee-content {
-            display: flex;
-            flex-wrap: nowrap;
-            animation: scroll 20s linear infinite;
-        }
-
-        .marquee img {
-            width: 250px;
-            height: 250px;
-            margin-right: 10px;
-        }
-
-        @keyframes scroll {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -154,6 +118,6 @@
 </html>
 
 <?php
-    // Incluir el pie de página
+    // Incluir el pie de página (si lo deseas modular)
     include 'layaout/footer.php';
 ?>
